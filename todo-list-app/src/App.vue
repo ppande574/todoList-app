@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1 id="appTitle">To-Do Tracker</h1>
+  <img id="mainLogo" alt="Todo App Logo" src="./assets/todo-app-logo.png">
+  <TaskItem msg="Welcome to your todo-list"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TaskItem from './components/TaskItem.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+    TaskItem
   }
 }
 </script>
@@ -22,5 +24,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  /* display: flex; 
+  justify-content: center;
+  height: 100vh;  */
 }
+
+#appTitle {
+  text-align: center;
+}
+
+#mainLogo {
+  position: center; 
+  width: 25%; 
+  height: auto; 
+}
+
 </style>
